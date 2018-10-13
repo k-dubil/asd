@@ -1,0 +1,17 @@
+
+[a_1 >= a_2 >= a_2 >= ... >= a_n]
+
+
+jeśli suma prefiksowa jest parzysta:
+
+1) wyrzucić najmniejszą parzystą, dodać największą nieparzystą
+
+P1(i) = min{A[j] : 0 <= j <= i, A[j] % 2 == 0}
+N1(i) = max{A[j] : i < j < n, A[j] % 2 == 1}
+
+
+2) wyrzucić najmniejszą nieparzystą, dodać największą parzystą
+
+N2(i) = min{A[j] : 0 <= j <= i, A[j] % 2 == 1}
+P2(i) = max{A[j] : i < j < n, A[j] % 2 == 0}
+
