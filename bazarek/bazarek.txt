@@ -1,5 +1,5 @@
 
-[a_1 >= a_2 >= a_2 >= ... >= a_n]
+[a_0 >= a_1 >= a_2 >= ... >= a_(n-1)]
 
 
 jeśli suma prefiksowa jest parzysta:
