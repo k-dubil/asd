@@ -1,0 +1,15 @@
+
+programowanie dynamiczne
+
+
+IleL(i, j) = z ilu permutacji można otrzymać A[i..j] przy założeniu, że ostatnio wstawiony element to A[i]
+IleR(i, j) = z ilu permutacji można otrzymać A[i..j] przy założeniu, że ostatnio wstawiony element to A[j]
+
+
+IleL(i, i) = IleR(i, i) = 1
+
+IleL(i, j) = IleL(i + 1, j)[A[i] < A[i + 1]] + IleR(i + 1, j)[A[i] < A[j]]
+IleR(i, j) = IleL(i, j - 1)[A[i] < A[j]] + IleR(i, j - 1)[A[j - 1] < A[j]]
+
+jeśli sąsiednie, to tylko jeden element sumy (albo przedefiniować przekątną)
+
