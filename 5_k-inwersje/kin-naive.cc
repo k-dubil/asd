@@ -13,11 +13,11 @@ void f() {
         std::cin >> a[i];
     }
 
-//    programowanie dynamiczne:
+//    dynamic programming:
 //    1 <= i <= n, 1 <= j <= k
 
-//    t(i, j) = liczba j-inwersji, które zaczynają się na pozycji i
-//    wynikiem jest (\sum_{i = 1}^{n} t(i, k)) \mod 10^9
+//    t(i, j) = number of j-inversions starting at index i
+//    the result is (\sum_{i = 1}^{n} t(i, k)) \mod 10^9
 //
 //    t(i, 1) = 1
 //    t(i, j) = (\sum_{l > i} T(l, j - 1)[a[i] > a[l]]) \mod 10^9
